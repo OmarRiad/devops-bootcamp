@@ -1,7 +1,7 @@
 #!/bin/bash
-NEXUS_USER="droplet"
-NEXUS_PASSWORD="omar1907"
-NEXUS_IP="164.92.147.80"
+NEXUS_USER="username"
+NEXUS_PASSWORD="password"
+NEXUS_IP="IP"
 NEXUS_REPO="npm-snapshots"
 curl -u $NEXUS_USER:$NEXUS_PASSWORD -X GET "http://$NEXUS_IP:8081/service/rest/v1/components?repository=$NEXUS_REPO&sort=version" | jq "." > artifact.json
 artifactDownloadUrl=$(jq '.items[].assets[].downloadUrl' artifact.json --raw-output)
