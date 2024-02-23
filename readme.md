@@ -26,17 +26,11 @@ I create Nexus user for the project 1 team to have access to this npm repository
 
 ## Exercise 4: Build and publish npm tar
 
-To test that the project 1 user has correct access configured. I:
-
-built and published a nodejs tar package to the npm repo
-
-
+To test that the project 1 user has correct access configured, I built and published a nodejs tar package to the npm repo
 
 ## Exercise 5: Create maven hosted repository
 
-For a Java application, I:
-
-create a new maven hosted repository
+For the Java application, I created a new maven hosted repository
 
 ## Exercise 6: Create user for team 2
 
