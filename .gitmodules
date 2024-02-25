@@ -1,0 +1,3 @@
+[submodule "bootcamp-java-mysql"]
+	path = bootcamp-java-mysql
+	url = https://gitlab.com/devops-bootcamp3/bootcamp-java-mysql.git
