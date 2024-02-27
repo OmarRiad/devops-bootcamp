@@ -1,15 +1,27 @@
 version : '3'
 services:
+  java-app:
+    container_name: java-app
+    image: 188.166.99.221:8083/java-app:1.0-snapshot
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PWD=${DB_PWD}
+      - DB_NAME=${DB_NAME}
+      - DB_SERVER=${DB_SERVER}
   mysql:
     container_name: mysql
     image: mysql
     ports:
       - 3306:3306
     environment:
-      - MYSQL_USER=admin
-      - MYSQL_PASSWORD=adminpass
-      - MYSQL_DATABASE=team-member-projects
-      - MYSQL_ROOT_PASSWORD=rootpass
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PWD}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     volumes:
       - mysql-data:/var/lib/mysql
     command: --default-authentication-plugin=mysql_native_password
@@ -17,9 +29,11 @@ services:
     container_name: phpmyadmin
     image: phpmyadmin
     environment:
-      - PMA_HOST=mysql
+      - PMA_HOST=${PMA_HOST}
     ports:
       - 8083:80
+    depends_on:
+      - mysql
 volumes:
   mysql-data:
     driver: local
