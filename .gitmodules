@@ -1,0 +1,9 @@
+[submodule "nexus-repository"]
+	path = nexus-repository
+	url = https://github.com/OmarRiad/devops-bootcamp.git
+[submodule "docker-project"]
+	path = docker-project
+	url = https://github.com/OmarRiad/devops-bootcamp.git
+[submodule "jenkins-project"]
+	path = jenkins-project
+	url = https://github.com/OmarRiad/devops-bootcamp.git
