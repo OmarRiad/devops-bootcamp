@@ -1,0 +1,3 @@
+[submodule "jenkins-demo"]
+	path = jenkins-demo
+	url = https://github.com/OmarRiad/jenkins-demo.git
