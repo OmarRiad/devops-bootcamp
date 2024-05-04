@@ -1,3 +1,6 @@
 [submodule "jenkins-demo"]
 	path = jenkins-demo
 	url = https://github.com/OmarRiad/jenkins-demo.git
+[submodule "jenkins-shared-libraryy"]
+	path = jenkins-shared-libraryy
+	url = https://github.com/OmarRiad/jenkins-shared-library.git
