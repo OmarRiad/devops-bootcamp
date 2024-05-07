@@ -4,3 +4,6 @@
 [submodule "jenkins-shared-libraryy"]
 	path = jenkins-shared-libraryy
 	url = https://github.com/OmarRiad/jenkins-shared-library.git
+[submodule "jenkins-exercises"]
+	path = jenkins-exercises
+	url = https://github.com/OmarRiad/jenkins-exercises.git
