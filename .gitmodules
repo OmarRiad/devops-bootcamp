@@ -7,3 +7,6 @@
 [submodule "jenkins-exercises"]
 	path = jenkins-exercises
 	url = https://github.com/OmarRiad/jenkins-exercises.git
+[submodule "jenkinsEx-shared-library"]
+	path = jenkinsEx-shared-library
+	url = https://github.com/OmarRiad/jenkinsEx-shared-library.git
