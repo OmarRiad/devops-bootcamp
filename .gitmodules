@@ -10,3 +10,6 @@
 [submodule "jenkinsEx-shared-library"]
 	path = jenkinsEx-shared-library
 	url = https://github.com/OmarRiad/jenkinsEx-shared-library.git
+[submodule "java-maven-app"]
+	path = java-maven-app
+	url = https://github.com/OmarRiad/java-maven-app.git
